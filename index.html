@@ -1,52 +1,129 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>داروخانه دکتر جلالی</title>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazirmatn/Vazirmatn.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
+    :root {
+      --background: #ffffff;
+      --text: #333333;
+      --button-bg: #f0f8ff;
+      --button-text: #1a4d8f;
+      --button-border: #c0dff5;
+      --button-hover-bg: #e0efff;
+      --icon-size: 20px; /* Small icon size */
+    }
+
     body {
-      background: #f7f7f7;
-      font-family: 'Tahoma', sans-serif;
       margin: 0;
       padding: 0;
+      font-family: 'Vazirmatn', sans-serif;
       direction: rtl;
-      text-align: center;
+      background: var(--background);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
+
     .container {
-      max-width: 400px;
-      margin: 50px auto;
-      padding: 20px;
-    }
-    h1 {
-      color: #333;
-      margin-bottom: 20px;
-    }
-    .link {
-      display: block;
       width: 100%;
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 15px;
-      margin: 10px 0;
+      max-width: 420px;
+      padding: 30px 20px;
+      box-sizing: border-box;
+      text-align: center;
+      background: var(--background);
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      width: 48px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .address {
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background: var(--button-bg);
+      color: var(--button-text);
+      border: 1px solid var(--button-border);
+      border-radius: 12px;
+      padding: 12px 0;
+      font-size: 14px;
+      font-weight: bold;
       text-decoration: none;
-      color: #333;
-      transition: background 0.3s;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+      margin-bottom: 10px; /* Space between buttons */
     }
+
+    .link i {
+      margin-left: 8px; /* Space between icon and text */
+      font-size: var(--icon-size);
+    }
+
     .link:hover {
-      background: #e6e6e6;
+      background: var(--button-hover-bg);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
+
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>داروخانه دکتر جلالی</h1>
-    <a class="link" href="https://www.instagram.com/your_pharmacy" target="_blank">اینستاگرام</a>
-    <a class="link" href="https://wa.me/your_whatsapp_number" target="_blank">واتساپ</a>
-    <a class="link" href="https://t.me/your_telegram" target="_blank">تلگرام</a>
-    <a class="link" href="tel:your_landline_number">تلفن ثابت داروخانه</a>
-    <a class="link" href="tel:your_mobile_number">تلفن همراه داروخانه</a>
+    <div class="header">
+      <img class="logo" src="pharmacy-logo.png" alt="لوگوی داروخانه" />
+      <h1>داروخانه دکتر جلالی</h1>
+    </div>
+
+    <!-- Address moved to the top -->
+    <p class="address">صدرا، نبش بلوار مولانا و پاسداران</p>
+
+    <!-- Buttons in a single column -->
+    <a class="link" href="https://maps.app.goo.gl/78Z5UEvFu7Tjexen9" target="_blank">
+      <i class="fas fa-map-marker-alt"></i> آدرس داروخانه
+    </a>
+    <a class="link" href="tel:071-36431930">
+      <i class="fas fa-phone-alt"></i> تلفن ثابت داروخانه
+    </a>
+    <a class="link" href="tel:09012087703">
+      <i class="fas fa-mobile-alt"></i> تلفن همراه داروخانه
+    </a>
+    <a class="link" href="https://www.instagram.com/your_pharmacy" target="_blank">
+      <i class="fab fa-instagram"></i> اینستاگرام
+    </a>
+    <a class="link" href="https://chat.whatsapp.com/IipikyBZm5LEVci3FLLl6c" target="_blank">
+      <i class="fab fa-whatsapp"></i> واتساپ
+    </a>
+    <a class="link" href="https://t.me/+ZXjXEpUOpdU3MTc0" target="_blank">
+      <i class="fab fa-telegram"></i> تلگرام
+    </a>
   </div>
 </body>
 </html>
